@@ -1,175 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfa Tech - O Futuro Começa Agora </title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfa Tech | O Futuro Começa Agora</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo-alfa.png">
 </head>
 <body>
 
 <!-- Cabeçalho -->
 <header class="cabecalho">
+  <div class="container">
     <div class="logo">
-        <img src="logo-simbolo.png" alt="Logo Alfa Tech">
-        <div class="logo-texto">
-            <h1>ALFA TECH</h1>
-            
-        </div>
+      <img src="logo-alfa.png" alt="Logo Alfa Tech">
+      <div class="texto-logo">
+        <h4>ALFA TECH</h4>
+        <p>O Futuro Começa AGORA</p>
+      </div>
     </div>
-    <a href="#contato" class="btn-fale">Fale Conosco →</a>
-    <nav class="menu">
-        <a href="#inicio" class="ativo">Início</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#solucao">Soluções</a>
-        <a href="#tecno">Tecnologias</a>
-        <a href="#sobre">Sobre Nós</a>
-        <a href="#contato">Contato</a>
+
+    <nav class="menu-principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato">Contato</a>
     </nav>
+
+    <a href="#contato" class="btn-pequeno">FALE CONOSCO</a>
+  </div>
 </header>
 
-<!-- Seção Lobo -->
-<section id="inicio" class="inicio">
-    <img src="lobo-fixo.png" alt="Lobo Alfa Tech">
-    <div class="marca-baixo">
-        <h2>ALFA TECH</h2>
-      
+<!-- Seção Principal -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="texto-hero">
+      <p class="saudacao">BEM-VINDO À</p>
+      <h1>ALFA <span>TECH</span></h1>
+      <p class="slogan-secao">O FUTURO COMEÇA AGORA</p>
+      <p class="descricao-hero">
+        Soluções tecnológicas completas para impulsionar seu negócio, automatizar processos e gerar resultados extraordinários.
+      </p>
+      <div class="grupo-botoes">
+        <a href="#servicos" class="btn-dourado">NOSSOS SERVIÇOS</a>
+        <a href="javascript:abrirWhatsApp()" class="btn-transparente">FALE COM O ESPECIALISTA</a>
+      </div>
     </div>
+
+    <div class="imagem-hero">
+      <img src="lobo-alfa.png" alt="Lobo Alfa Tech">
+    </div>
+  </div>
+
+  <!-- Estatísticas -->
+  <div class="estatisticas">
+    <div class="item-estatistica">🚀 <span>+250</span> <p>PROJETOS CONCLUÍDOS</p></div>
+    <div class="item-estatistica">🤝 <span>+150</span> <p>CLIENTES SATISFEITOS</p></div>
+    <div class="item-estatistica">⏱️ <span>24/7</span> <p>SUPORTE E ATENDIMENTO</p></div>
+    <div class="item-estatistica">✅ <span>100%</span> <p>COMPROMISSO COM RESULTADOS</p></div>
+  </div>
 </section>
 
-<!-- Seção Tecnologias -->
-<section id="tecno" class="secao-itens">
-    <p class="titulo-secao">O FUTURO COMEÇA Agora</p>
-    <div class="item">
-        <span class="icone">⚙️</span>
-        <div>
-            <h3>TECNOLOGIA</h3>
-            <p>Soluções avançadas para o seu negócio</p>
-        </div>
+<!-- Serviços -->
+<section class="servicos" id="servicos">
+  <div class="container">
+    <div class="cabecalho-secao">
+      <h3>NOSSOS SERVIÇOS</h3>
+      <h2>Soluções que Transformam</h2>
+      <p>Tecnologia, criatividade e inteligência trabalhando juntas para resolver problemas e criar oportunidades para o seu negócio.</p>
     </div>
-    <div class="item">
-        <span class="icone">🛡️</span>
-        <div>
-            <h3>PROTEÇÃO</h3>
-            <p>Segurança digital completa</p>
-        </div>
+
+    <div class="grade-servicos">
+      <div class="card-servico">🖥️ <h4>CRIAÇÃO DE SITES</h4> <p>Sites modernos, responsivos e estratégicos para gerar mais resultados e fortalecer a sua marca na internet.</p></div>
+      <div class="card-servico">&lt;/&gt; <h4>DESENVOLVIMENTO DE SISTEMAS</h4> <p>Sistemas personalizados para automatizar processos e melhorar a gestão da sua empresa na íntegra.</p></div>
+      <div class="card-servico">🤖 <h4>AUTOMAÇÃO COM IA</h4> <p>Automatiza atendimentos, processos e tarefas repetitivas com a inteligência artificial.</p></div>
+      <div class="card-servico">📱 <h4>APLICATIVOS</h4> <p>Desenvolvemos aplicativos móveis com performance ideal para Android e iOS.</p></div>
+      <div class="card-servico">🛡️ <h4>SEGURANÇA E PROTEÇÃO</h4> <p>Protegemos seus dados e sistemas com as tecnologias mais avançadas e confiáveis.</p></div>
+      <div class="card-servico">🔧 <h4>SUPORTE E MANUTENÇÃO</h4> <p>Suporte técnico contínuo para sua total tranquilidade e funcionamento ininterrupto.</p></div>
     </div>
-    <div class="item">
-        <span class="icone">💡</span>
-        <div>
-            <h3>CRIAÇÃO</h3>
-            <p>Design e soluções que geram valor</p>
-        </div>
-    </div>
-    <div class="item">
-        <span class="icone">📈</span>
-        <div>
-            <h3>RESULTADOS</h3>
-            <p>Estratégias que impulsionam o futuro</p>
-        </div>
-    </div>
+
+    <a href="#servicos" class="btn-centro">VER TODOS OS SERVIÇOS</a>
+  </div>
 </section>
 
-<!-- Seção Números -->
-<section id="solucao" class="secao-numeros">
-    <div class="numero-item">
-        <span class="valor" data-final="250">0</span>
-        <p>PROJETOS ENTREGUES</p>
+<!-- Chamada Final -->
+<section class="chamada-final">
+  <div class="container">
+    <div class="texto-chamada">
+      <h3>PRONTO PARA LEVAR SEU NEGÓCIO AO PRÓXIMO NÍVEL?</h3>
+      <p>Fale com a Alfa Tech e descubra como podemos transformar o seu projeto em um resultado de grande sucesso.</p>
     </div>
-    <div class="numero-item">
-        <span class="valor" data-final="150">0</span>
-        <p>CLIENTES SATISFEITOS</p>
+    <div class="botoes-chamada">
+      <a href="javascript:abrirWhatsApp()" class="btn-dourado">CHAMAR NO WHATSAPP</a>
+      <a href="#contato" class="btn-transparente">SOLICITAR ORÇAMENTO</a>
     </div>
-    <div class="numero-item">
-        <span class="valor" data-final="99.9">0</span>
-        <p>% SEGURANÇA GARANTIDA</p>
-    </div>
-    <div class="numero-item">
-        <span class="valor" data-final="24">0</span><span class="complemento">/7</span>
-        <p>SUPORTE SEMPRE ATIVO</p>
-    </div>
+  </div>
 </section>
 
-<!-- Seção Missão -->
-<section id="sobre" class="secao-missao">
-    <h2>ALFA TECH</h2>
-    <p class="frase-destaque">"Onde outros veem problemas, a Alfa Tech desenvolve soluções."</p>
-    <div class="bloco-texto">
-        <h3>Nossa Missão</h3>
-        <p>Desenvolver soluções inteligentes que ajudem pessoas e empresas a resolver problemas usando tecnologia, inteligência artificial, automação e desenvolvimento de software.</p>
+<!-- Rodapé -->
+<footer id="contato">
+  <div class="container">
+    <div class="coluna-rodape">
+      <h5>LINKS RÁPIDOS</h5>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </div>
-</section>
 
-<!-- Seção Serviços -->
-<section id="servicos" class="secao-servicos">
-    <div class="item-servico">
-        <span class="icone">🌐</span>
-    <div>
-            <h3>Desenvolvimento de Sites</h3>
-            <p>Sites modernos, rápidos e profissionais.</p>
-        </div>
+    <div class="coluna-rodape">
+      <h5>SERVIÇOS</h5>
+      <ul>
+        <li><a href="#">Criação de Sites</a></li>
+        <li><a href="#">Desenvolvimento de Sistemas</a></li>
+        <li><a href="#">Inteligência Artificial</a></li>
+        <li><a href="#">Aplicativos</a></li>
+        <li><a href="#">Automação</a></li>
+      </ul>
     </div>
-    <div class="item-servico">
-        <span class="icone">📱</span>
-        <div>
-            <h3>Desenvolvimento de Aplicativos</h3>
-            <p>Aplicativos para Android, iPhone e empresas.</p>
-        </div>
-    </div>
-    <div class="item-servico">
-        <span class="icone">🤖</span>
-        <div>
-            <h3>Inteligência Artificial</h3>
-            <p>Chatbots, assistentes virtuais e soluções com IA.</p>
-        </div>
-    </div>
-</section>
 
-<!-- Seção Contato -->
-<section id="contato" class="secao-contato">
-    <h2>Fale Conosco</h2>
-    <form action="https://formspree.io/f/mdaqqknj" method="POST">
-        <input type="email" name="email" placeholder="Seu melhor e-mail" required>
-        <textarea name="mensagem" placeholder="Conte o que precisa para nós" required rows="5"></textarea>
-        <button type="submit">Enviar Mensagem</button>
-    </form>
-</section>
+    <div class="coluna-rodape">
+      <h5>CONTATO</h5>
+      <p>📞 (48) 9XXXX-XXXX</p>
+      <p>📧 contato@alfatech.com.br</p>
+      <p>📍 Santa Catarina, Brasil</p>
+    </div>
+  </div>
 
-<!-- Botão Voltar ao Topo -->
-<button id="voltarTopo" onclick="voltarAoTopo()">⬆️</button>
+  <div class="direitos">
+    <p>© 2026 Alfa Tech. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a href="javascript:abrirWhatsApp()" class="btn-wpp-fixo">💬</a>
 
 <script>
-// Animação dos números
-function animarNumeros() {
-    const numeros = document.querySelectorAll('.valor');
-    const duracaoTotal = 5000;
-    numeros.forEach(num => {
-        const final = parseFloat(num.dataset.final);
-        const passo = final / (duracaoTotal / 30);
-        let atual = 0;
-        const contando = setInterval(() => {
-            atual += passo;
-            if(atual >= final) {
-                num.textContent = final.toString().replace('.', ',');
-                clearInterval(contando);
-            } else {
-                num.textContent = Number.isInteger(final) ? Math.floor(atual) : atual.toFixed(1).replace('.', ',');
-            }
-        }, 30);
-    });
+const WPP = "5548999999999";
+function abrirWhatsApp(){
+  const msg = `Olá! Conheci a Alfa Tech e quero solicitar um orçamento. Podemos conversar?`;
+  window.open(`https://wa.me/${WPP}?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
-const observador = new IntersectionObserver((entradas) => {
-    entradas.forEach(e => {
-        if(e.isIntersecting) { animarNumeros(); observador.unobserve(e.target); }
-    });
-}, { threshold: 0.5 });
-observador.observe(document.querySelector('.secao-numeros'));
-
-function voltarAoTopo() { window.scrollTo({top: 0, behavior: 'smooth'}); }
-window.addEventListener('scroll', () => {
-    const btn = document.getElementById('voltarTopo');
-    btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const alvo = document.querySelector(a.getAttribute('href'));
+    if(alvo) window.scrollTo({top: alvo.offsetTop - 80, behavior: 'smooth'});
+  });
 });
 </script>
 
