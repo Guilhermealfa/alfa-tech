@@ -468,3 +468,103 @@ footer .container{
   .grupo-botoes, .botoes-chamada { flex-direction: column; width: 100%; }
   .btn-dourado, .btn-transparente, .btn-centro { width: 100%; text-align: center; }
 }
+/* ===== SOLUÇÕES E PLANOS ===== */
+.solucoes {
+  background: linear-gradient(to bottom, var(--preto-fundo), #070707);
+  padding: 5rem 0;
+}
+
+.grade-pacotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 2rem;
+  margin: 3.5rem 0;
+}
+
+.pacote {
+  background: var(--preto-caixa);
+  border: 1px solid rgba(212,175,55,0.2);
+  border-radius: 18px;
+  padding: 2.2rem 1.8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s ease;
+}
+
+.pacote:hover {
+  transform: translateY(-10px);
+  border-color: var(--dourado);
+  box-shadow: 0 0 35px var(--dourado-sombra);
+}
+
+.destaque {
+  transform: scale(1.04);
+  border: 2px solid var(--dourado);
+}
+
+.destaque:hover {
+  transform: translateY(-10px) scale(1.04);
+}
+
+.faixa-cor {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 8px;
+  border-radius: 18px 18px 0 0;
+}
+.alfa-start .faixa-cor { background: #d4af37; }
+.alfa-growth .faixa-cor { background: linear-gradient(90deg, #d4af37, #f8dd82); }
+.alfa-pro .faixa-cor { background: linear-gradient(90deg, #9d4edd, #d4af37); }
+
+.selo {
+  position: absolute;
+  top: 18px; right: 18px;
+  background: var(--dourado);
+  color: #000;
+  font-weight: 800;
+  font-size: 0.72rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.pacote h3 {
+  font-size: 1.85rem;
+  margin: 1.5rem 0 0.4rem;
+  color: var(--dourado-brilho);
+}
+.subtitulo { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.8rem; opacity: 0.9; }
+.descricao-pacote { color: var(--texto-claro); margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+
+.lista-beneficios { list-style: none; margin-bottom: 2rem; gap: 0.7rem; display: flex; flex-direction: column; }
+.lista-beneficios li { padding: 0.3rem 0; font-size: 0.95rem; }
+
+.investimento { text-align: center; margin: auto 0 1.8rem; padding: 1.2rem; background: rgba(212,175,55,0.08); border-radius: 12px; }
+.investimento span { display: block; font-size: 0.9rem; opacity: 0.85; margin-bottom: 0.3rem; }
+.investimento strong { font-size: 2.1rem; color: var(--dourado-brilho); font-weight: 900; }
+
+.btn-pacote { width: 100%; padding: 1rem; border-radius: 10px; font-weight: 800; text-align: center; text-decoration: none; transition: 0.3s; border: none; font-size: 1.05rem; margin-top: auto; }
+.btn-pagamento { background: linear-gradient(135deg, #10b981, #059669); color: white; box-shadow: 0 0 15px rgba(16,185,129,0.35); }
+.btn-pagamento:hover { transform: translateY(-3px); box-shadow: 0 0 25px rgba(16,185,129,0.5); }
+.btn-projeto { background: linear-gradient(135deg, var(--dourado), var(--dourado-brilho)); color: #000; box-shadow: 0 0 15px var(--dourado-sombra); }
+.btn-projeto:hover { transform: translateY(-3px); box-shadow: 0 0 25px var(--dourado-sombra); }
+
+/* Passos e chamada final */
+.como-trabalhamos { margin: 5rem 0 3rem; text-align: center; }
+.como-trabalhamos h3 { font-size: 1.5rem; color: var(--dourado-brilho); margin-bottom: 3rem; text-transform: uppercase; }
+.passos { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; }
+.passo { max-width: 220px; }
+.passo .numero { width: 60px; height: 60px; margin: 0 auto 1rem; background: linear-gradient(135deg, var(--dourado), var(--dourado-brilho)); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 900; }
+.passo h4 { margin-bottom: 0.5rem; font-size: 1.15rem; }
+
+.chamada-final-secao { text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, rgba(212,175,55,0.1), rgba(212,175,55,0.02)); border-radius: 20px; border: 1px solid rgba(212,175,55,0.2); margin-top: 3rem; }
+.chamada-final-secao h2 { font-size: 2rem; margin-bottom: 1rem; line-height: 1.3; }
+.chamada-final-secao p { font-size: 1.15rem; margin-bottom: 2rem; color: var(--texto-claro); max-width: 700px; margin-left: auto; margin-right: auto; }
+.botoes-duplos { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; }
+
+@media (max-width: 992px) {
+  .grade-pacotes { grid-template-columns: 1fr; }
+  .destaque { transform: scale(1); }
+  .destaque:hover { transform: translateY(-8px); }
+}
